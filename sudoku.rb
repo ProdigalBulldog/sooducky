@@ -83,6 +83,7 @@ class Board
 end
 
 class Tile
+  require "colorize"
   attr_reader :value
 
   def initialize(value)
@@ -109,6 +110,7 @@ class Tile
       @value = new_value
     end
   end
+end
 
 class SudokuGame
   def self.from_file(filename)
